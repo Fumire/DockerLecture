@@ -55,9 +55,40 @@
             \item Machine in the machine \sout{in the machine in the machine ...}
             \item Machine\textbf{s} in the machine
         \end{itemize}
+
+        However, VM (Virtual Machine) is ...
+        \begin{itemize}
+            \item Slow...
+            \item Virtualizing from CPU $\rightarrow$ still slow.
+            \item VM needs 'Guest OS' $\therefore$ Performance leakage.
+        \end{itemize}
     \end{frame}
 
     \section{Docker}
+    \begin{frame}
+        \frametitle{Docker}
+
+        \begin{itemize}
+            \item Does not require 'Guest OS'
+            \item Sharing system call with Host OS
+            \item (Almost) No performance leakage
+        \end{itemize}
+
+        \begin{figure}[h!]
+            $\begin{array}{cc}
+                \includegraphics[width=0.3 \linewidth]{figures/vm.png}
+                &
+                \includegraphics[width=0.3 \linewidth]{figures/docker.png}
+                \\
+                \mbox{(a) VM} & \mbox{(b) Docker}
+            \end{array}$
+            \caption{VM vs. Docker (Docker Docs)}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Docker Image \& Container}
+    \end{frame}
 
     \section{Dockerfile}
 \end{document}
