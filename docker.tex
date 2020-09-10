@@ -88,7 +88,29 @@
 
     \begin{frame}
         \frametitle{Docker Image \& Container}
+
+        \begin{figure}[h!]
+            \includegraphics[width=0.6 \linewidth]{figures/architecture.jpg}
+            \caption{Docker Architecture (cultivatehq.com)}
+        \end{figure}
     \end{frame}
 
-    \section{Dockerfile}
+    \begin{frame}
+        \frametitle{Docker Image \& Container \textit{(Cont.)}}
+
+        Docker Image
+        \begin{itemize}
+            \item Hold anything required for running service
+            \item Immutable
+        \end{itemize}
+
+        Docker Container
+        \begin{itemize}
+            \item Executed version of Docker image
+            \item Multiple containers can be made from same image
+            \item Volatile, i.e. remove all information it contains
+        \end{itemize}
+    \end{frame}
+
+    \section{Docker Options}
 \end{document}
